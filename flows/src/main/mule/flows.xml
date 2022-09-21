@@ -14,5 +14,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</flow>
 	<sub-flow name="flowsSub_Flow" doc:id="26df4305-5042-4e16-885c-973a34a15523" >
 		<logger level="INFO" doc:name="Logger" doc:id="f747865d-8f88-4b5e-9199-f42f6a04e5ea" message="hello avanthi"/>
+		<logger level="INFO" doc:name="Logger" doc:id="f747865d-8f88-4b5e-9199-f42f6a04e5ea" message="hello prasanna"/>
 	</sub-flow>
 </mule>
