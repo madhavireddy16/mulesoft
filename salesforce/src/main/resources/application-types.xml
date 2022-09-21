@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<types:mule xmlns:types="http://www.mulesoft.org/schema/mule/types">
+  <types:catalog>
+    <types:type name="simple" format="json">
+      <types:shape format="weave" example="examples/m.txt"><![CDATA[%dw 2.0
+
+type simple = Array<{|  name: String,   email: String|}> {"example": "[{\\\"name\\\":\\\"madhu\\\",\\\"email\\\":\\\"madhu@gmail.com\\\"},{\\\"name\\\":\\\"brahma\\\",\\\"email\\\":\\\"brahma@gmail.com\\\"}]"}
+
+]]></types:shape>
+    </types:type>
+  </types:catalog>
+  <types:enrichment select="#58754781-3b22-4f89-9f60-dded9ef2bf16">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="simple"/>
+        </types:message>
+      </types:input-event>
+    </types:processor-declaration>
+  </types:enrichment>
+</types:mule>
